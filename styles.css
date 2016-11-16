@@ -51,9 +51,10 @@ html, body {
   color: #595958;
   position: fixed;
   text-align: right;
-  top: 22%;
+  top: 24%;
   right: 70px;
   max-width: 40%;
+  line-height: 75%;
 }
 
 #text-container {
