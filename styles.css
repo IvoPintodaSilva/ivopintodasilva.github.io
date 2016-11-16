@@ -43,7 +43,7 @@ html, body {
 #title {
   color: #595958;
   position: fixed;
-  top: 5px;
+  top: 0px;
   right: 70px;
 }
 
@@ -51,7 +51,7 @@ html, body {
   color: #595958;
   position: fixed;
   text-align: right;
-  top: 25%;
+  top: 22%;
   right: 70px;
   max-width: 40%;
 }
