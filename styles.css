@@ -3,28 +3,38 @@ html, body {
   margin: 0;
   overflow: hidden;
 }
-
-#left-block {
-  background-color: #595958;
-  position: fixed;
-  float: left;
-  width: 40%;
-  height: 100%;
-  left: 0;
-  top: 0;
+@media (min-width: 992px) {
+  #left-block {
+    background-color: #595958;
+    position: fixed;
+    float: left;
+    width: 40%;
+    height: 100%;
+    left: 0;
+    top: 0;
+  }
 }
 
-#image {
-  position: fixed;
-  width: 45%;
-  height: 70%;
-  right: 45%;
-  top: 15%;
-  box-shadow: 2px 2px 200px rgba(0, 0, 0, 0.7);
-  overflow: hidden;
-  background-size: cover;
-  background-position: center;
-  background-image: url('./media/amsterdam.jpg');
+@media (max-width: 992px) {
+  #image {
+    width: 100%;
+    box-shadow: 2px 2px 200px rgba(0, 0, 0, 0.7);
+    overflow: hidden;
+  }
+}
+
+@media (min-width: 992px) {
+  #image {
+    position: fixed;
+    max-width: 50%;
+    height: 70%;
+    width: auto;
+    box-shadow: 2px 2px 200px rgba(0, 0, 0, 0.7);
+    overflow: hidden;
+    top: 15%;
+    margin-left: 100px;
+    object-fit: cover;
+  }
 }
 
 #image-caption {
@@ -40,11 +50,13 @@ html, body {
   top: 50%
 }
 
-#title {
-  color: #595958;
-  position: fixed;
-  top: 0px;
-  right: 70px;
+@media (min-width: 992px) {
+  #title {
+    color: #595958;
+    text-align: right;
+    top: 80px;
+    right: 70px;
+  }
 }
 
 #subtitle {
@@ -61,17 +73,10 @@ html, body {
   vertical-align: middle;
 }
 
-#icons-wrapper {
-  position: fixed;
-  width: 50%;
-  height: 100px;
-  right: 70px;
-  bottom: 51px;
-}
+
 
 #get-to-know-me {
   color: #595958;
-  position: fixed;
   float: right;
   right: 80px;
   bottom: 150px;
@@ -81,7 +86,6 @@ html, body {
   width: 40px;
   height: 40px;
   float: right;
-
 }
 
 #linkedin {
